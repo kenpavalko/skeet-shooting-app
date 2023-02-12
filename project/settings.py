@@ -140,3 +140,8 @@ INTERNAL_IPS = [
     "localhost",
     # ...
 ]
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
