@@ -83,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'skeet_shooting_scoring_app_db',
         'USER' : 'postgres',
-        'PASSWORD' : 'Post!!036163',
+        'PASSWORD' : 'Post6163',
         'HOST' : 'localhost',
     }
 }
