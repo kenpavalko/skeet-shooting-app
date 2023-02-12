@@ -1,3 +1,4 @@
+from atexit import register
 from django.shortcuts import render
 from . models import Team, Shooter, Score
 # Create your views here.
