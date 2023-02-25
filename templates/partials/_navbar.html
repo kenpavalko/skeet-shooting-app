@@ -1,15 +1,51 @@
-
-<header id='main-navigation'>
-  <div class="container">
-  <nav>
-    <ul>
-      <li><a href="https://www.indigoshoot.com/">HOME</a></li>
-      <li><a href="https://www.indigoshoot.com/how-it-started/">HOW IT STARTED</a></li>
-      <li><a href="https://www.indigoshoot.com/2019-scores/">SCORES</a></li>
-      <li><a href="https://www.indigoshoot.com/past-scores/">PAST WINNERS</a></li>
-      <li><a href="https://www.indigoshoot.com/upcoming-events/">UPCOMING EVENTS</a></li>
-      <li><a href="http://indigoshootscores.myitdepartment.org/admin/">ADMIN</a></li>
+{% load static %}
+<div class="container-fluid bg-info-subtle">
+  <nav class="navbar container navbar-expand-md navbar-light bg-info-subtle" id="main-navigation">
+  
+    <a href="#" class="navbar-brand mb-0 h1">
+      <img src="{% static 'img/logo.jpg' %}" width="30" height="30" alt="">
+      Indigoshoot
+    </a>
+  <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="flase" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav bg-info-subtle">
+      <li class="nav-item active">
+        <a href="https://www.indigoshoot.com/" class="nav-link active">Home</a>
+      </li>
+      <li>
+        <a href="https://www.indigoshoot.com/how-it-started/" class="nav-link">How It Started</a>
+      </li>
+      <li>
+        <a href="https://www.indigoshoot.com/2019-scores/" class="nav-link">Scores</a>
+      </li>
+      <li>
+        <a href="https://www.indigoshoot.com/past-scores/" class="nav-link">Past Winners</a>
+      </li>
+      <li>
+        <a href="https://www.indigoshoot.com/upcoming-events/" class="nav-link">Upcoming Events</a>
+      </li>
+      <li>
+        <a href="http://indigoshootscores.myitdepartment.org/admin/" class="nav-link">
+          Admin
+        </a>
+      </li>
     </ul>
-  </nav>
+  </div>
+</nav>
 </div>
-</header>
+<!-- <header id='main-navigation'>
+  <div id="main-navigation" class="container">
+    <nav>
+      <ul>
+        <li><a href="https://www.indigoshoot.com/">HOME</a></li>
+        <li><a href="https://www.indigoshoot.com/how-it-started/">HOW IT STARTED</a></li>
+        <li><a href="https://www.indigoshoot.com/2019-scores/">SCORES</a></li>
+        <li><a href="https://www.indigoshoot.com/past-scores/">PAST WINNERS</a></li>
+        <li><a href="https://www.indigoshoot.com/upcoming-events/">UPCOMING EVENTS</a></li>
+        <li><a href="http://indigoshootscores.myitdepartment.org/admin/">ADMIN</a></li>
+      </ul>
+    </nav>
+  </div>
+</header> -->

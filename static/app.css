@@ -19,10 +19,14 @@ h3 {
   font-weight: bold;
 }
 
+#header {
+  width: 100vw;
+}
+
 #main-navigation {
-  background-color: lightslategray;
+  background-color: #fef;
   height: 5rem;
-  color: white;
+  color: #000;
   width: 100%;
   display: flex;
   align-items: center;
@@ -48,13 +52,13 @@ h3 {
 
 #main-navigation a {
   text-decoration: none;
-  color: white;
+  color: #111;
   font-weight: bold;
 }
 
 #main-navigation a:hover,
 #main-navigation a:active {
-  color: #cf79f1;
+  color: #555;
 }
 
 #footer {
