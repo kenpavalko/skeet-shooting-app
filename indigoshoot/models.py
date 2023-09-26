@@ -18,7 +18,7 @@ class Shooter(models.Model):
     return self.name
 
 class Score(models.Model):
-  shooter = models.ForeignKey(Shooter, on_delete=models.CASCADE)
+  shooter = models.OneToOneField(Shooter, on_delete=models.CASCADE,unique=True)
   RD1_POINTS = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(25)], default=0)
   RD2_POINTS = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(25)], default=0)
   RD3_POINTS = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(25)], default=0)
@@ -69,35 +69,3 @@ class Score(models.Model):
   def Day5_cumm(self):
     day5_cumm = self.RD1_POINTS + self.RD2_POINTS + self.RD3_POINTS + self.RD4_POINTS + self.RD5_POINTS + self.RD6_POINTS + self.RD7_POINTS + self.RD8_POINTS + self.RD9_POINTS + self.RD10_POINTS
     return day5_cumm
-
-  # @register.filter
-  # def top_five_background_color(value):
-  #   if value >= 5:
-  #       return '#FF0000'  # Red
-
-#   how would i format html table cell background color based on top 5 values in a column django
-
-# There are a few ways to do this in Django. The simplest approach may be to use the built-in template tag "forloop.counter":
-
-# {% for value in your_column %}
-#   {% if forloop.counter <= 5 %}
-#     <td style="background-color: {{ value.background_color }};">{{ value }}</td>
-#   {% else %}
-#     <td>{{ value }}</td>
-#   {% endif %}
-# {% endfor %}
-
-# You could also use a custom template filter to set the background color for the top 5 values in a column. For example, something like this:
-
-# @register.filter
-# def top_five_background_color(value):
-#     if value <= 5:
-#         return '#FF0000'  # Red
-#     else:
-#         return '#FFFFFF'  # White
-
-# And then use it like this:
-
-# {% for value in your_column %}
-#     <td style="background-color: {{ value|top_five_background_color }};">{{ value }}</td>
-# {% endfor %}

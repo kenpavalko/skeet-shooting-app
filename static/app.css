@@ -83,3 +83,12 @@ h3 {
   color: white;
   font-weight: bold;
 }
+
+.pic-wrapper {
+  position: relative;
+  top: -85px;
+}
+
+.results {
+  margin-bottom: -75px;
+}

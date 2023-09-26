@@ -15,69 +15,261 @@ Indigoshoot Scores
     <section id='welcome'>
       <h2 class="mt-3 text-center">Tournament Scores</h2>
     </section>
-    <section>
-      <h3>Summary</h3>
-      <table class="table table-striped table-bordered border-primary display product-overview mb-30 w-auto">
-        <thead>
-          <tr>
-            <td class="fw-bold">Team/Day</td>
-            <td class="fw-bold">1</td>
-            <td class="fw-bold">2</td>
-            <td class="fw-bold">3</td>
-            <td class="fw-bold">4</td>
-            <td class="fw-bold">5</td>
-            <td class="fw-bold">Total</td>
-          </tr>
-        </thead>
-        <tbody class="align-middle text-center">
-          <tr>
-            <td class="text-start">Country Club</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td class="text-start">Mentor Harbor</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td class="text-start">Huntington Valley</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td class="text-start">Youngstown CC</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td class="text-start">Kirtland CC</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <section class="mt-5">
+        <h3>Summary</h3>
+        <div class="row">
+          <div class="col-12">
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <tr>
+                  <th class="fw-bold">Team/Day</th>
+                  <th class="fw-bold text-center">1</th>
+                  <th class="fw-bold text-center">2</th>
+                  <th class="fw-bold text-center">3</th>
+                  <th class="fw-bold text-center">4</th>
+                  <th class="fw-bold text-center">5</th>
+                  <th class="fw-bold text-center">Total</th>
+                </tr>
+              </thead>
+              <tbody class="align-middle text-center">
+                <tr>
+                  <td class="text-start text-nowrap">Country Club</td>
+                  <td>237</td>
+                  <td>219</td>
+                  <td>240</td>
+                  <td>229</td>
+                  <td>230</td>
+                  <td>1155</td>
+                </tr>
+                <tr>
+                  <td class="text-start text-nowrap">Mentor Harbor</td>
+                  <td>219</td>
+                  <td>218</td>
+                  <td>219</td>
+                  <td>209</td>
+                  <td>223</td>
+                  <td>1088</td>
+                </tr>
+                <tr>
+                  <td class="text-start text-nowrap">Hunting Valley</td>
+                  <td>233</td>
+                  <td>225</td>
+                  <td>231</td>
+                  <td>213</td>
+                  <td>234</td>
+                  <td>1136</td>
+                </tr>
+                <tr>
+                  <td class="text-start text-nowrap">Youngstown CC</td>
+                  <td>234</td>
+                  <td>228</td>
+                  <td>237</td>
+                  <td>236</td>
+                  <td>240</td>
+                  <td>1175</td>
+                </tr>
+                <tr>
+                  <td class="text-start text-nowrap">Kirtland CC</td>
+                  <td>210</td>
+                  <td>214</td>
+                  <td>210</td>
+                  <td>214</td>
+                  <td>226</td>
+                  <td>1074</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <img class='mb-3' src="{% static 'img/2023YCC-crop.jpg' %}" width='100%'>
+          </div>
+          <div class="col-md-6">
+            <img class='mb-3' src="{% static 'img/2023YCC-2-crop.jpg' %}" width='100%'>
+          </div>
+          <div class="row">
+          <div class="col-lg-4">
+            <h3>Top Shooters</h3>
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <tr>
+                  <td class="fw-bold" colspan="2">Top Gun</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>B. Benyo</td>
+                  <td class='text-center'>242</td>
+                </tr>
+                <thead>
+                <tr>
+                  <td class="fw-bold" colspan="2">Runner-up</td>
+                </tr>
+              </thead>
+                <tr>
+                  <td>J. Nook</td>
+                  <td class='text-center'>235</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            
+          <div class="col-lg-4">
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <p class='fw-bold'>Winning Team - YCC</p>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>B. Benyo</td>
+                  <td class='text-center'>242</td>
+                </tr>
+                <tr>
+                  <td>S. Anderson</td>
+                  <td class='text-center'>234</td>
+                </tr>
+                <tr>
+                  <td>T. Roberts</td>
+                  <td class='text-center'>225</td>
+                </tr>
+                <tr>
+                  <td>R. Strollo</td>
+                  <td class='text-center'>222</td>
+                </tr>
+                <tr>
+                  <td>S. Bolten</td>
+                  <td class='text-center'>221</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-4">
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <tr>
+                  <p class='fw-bold'>Second Team - CC</p>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>J. Nook</td>
+                  <td class='text-center'>235</td>
+                </tr>
+                <tr>
+                  <td>B. Buescher</td>
+                  <td class='text-center'>232</td>
+                </tr>
+                <tr>
+                  <td>S. Smith</td>
+                  <td class='text-center'>226</td>
+                </tr>
+                <tr>
+                  <td>R. Wesorick</td>
+                  <td class='text-center'>222</td>
+                </tr>
+                <tr>
+                  <td>J. Moroscak</td>
+                  <td class='text-center'>163</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+          <div class="col-lg-4">
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <tr>
+                  <p class='fw-bold'>Third Team - HVGC</p>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>P. Taylor Jr.</td>
+                  <td class='text-center'>233</td>
+                </tr>
+                <tr>
+                  <td>M. Morris</td>
+                  <td class='text-center'>228</td>
+                </tr>
+                <tr>
+                  <td>H. Vavrik</td>
+                  <td class='text-center'>227</td>
+                </tr>
+                <tr>
+                  <td>J. Raythbun</td>
+                  <td class='text-center'>224</td>
+                </tr>
+                <tr>
+                  <td>T. Commes</td>
+                  <td class='text-center'>222</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-4">
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <tr>
+                  <p class='fw-bold'>Fourth Team - MHYC</p>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>T. Skinner</td>
+                  <td class='text-center'>227</td>
+                </tr>
+                <tr>
+                  <td>B. Litra</td>
+                  <td class='text-center'>217</td>
+                </tr>
+                <tr>
+                  <td>K. Horvath</td>
+                  <td class='text-center'>214</td>
+                </tr>
+                <tr>
+                  <td>R. Munz</td>
+                  <td class='text-center'>207</td>
+                </tr>
+                <tr>
+                  <td>T. Sims</td>
+                  <td class='text-center'>203</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-4">
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <tr>
+                  <p class='fw-bold'>Fifth Team - KCC</p>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>B. Doty</td>
+                  <td class='text-center'>223</td>
+                </tr>
+                <tr>
+                  <td>A. Andrews</td>
+                  <td class='text-center'>222</td>
+                </tr>
+                <tr>
+                  <td>D. Homer</td>
+                  <td class='text-center'>200</td>
+                </tr>
+                <tr>
+                  <td>T. Bourne</td>
+                  <td class='text-center'>194</td>
+                </tr>
+                <tr>
+                  <td>B. Gerhart</td>
+                  <td class='text-center'>193</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
     <section id="scores">
       <table class="table table-striped table-bordered border-primary display product-overview mb-30">
         <thead>
