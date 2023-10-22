@@ -1,0 +1,416 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Indigoshoot Scores
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'indigoshoot/css/score.css' %}">
+  <link rel="stylesheet" href="{% static 'indigoshoot/css/styles.css' %}">
+{% endblock css_files %}
+
+{% block content %}
+  <div class="container">
+    <section id='welcome'>
+      <h2 class="mt-3 text-center">Tournament Scores</h2>
+    </section>
+    <section class="mt-5">
+        <h3>Summary</h3>
+        <div class="row">
+          <div class="col-12">
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <tr>
+                  <th class="fw-bold">Team/Day</th>
+                  <th class="fw-bold text-center">1</th>
+                  <th class="fw-bold text-center">2</th>
+                  <th class="fw-bold text-center">3</th>
+                  <th class="fw-bold text-center">4</th>
+                  <th class="fw-bold text-center">5</th>
+                  <th class="fw-bold text-center">Total</th>
+                </tr>
+              </thead>
+              <tbody class="align-middle text-center">
+                <tr>
+                  <td class="text-start text-nowrap">Country Club</td>
+                  <td>237</td>
+                  <td>219</td>
+                  <td>240</td>
+                  <td>229</td>
+                  <td>230</td>
+                  <td>1155</td>
+                </tr>
+                <tr>
+                  <td class="text-start text-nowrap">Mentor Harbor</td>
+                  <td>219</td>
+                  <td>218</td>
+                  <td>219</td>
+                  <td>209</td>
+                  <td>223</td>
+                  <td>1088</td>
+                </tr>
+                <tr>
+                  <td class="text-start text-nowrap">Hunting Valley</td>
+                  <td>233</td>
+                  <td>225</td>
+                  <td>231</td>
+                  <td>213</td>
+                  <td>234</td>
+                  <td>1136</td>
+                </tr>
+                <tr>
+                  <td class="text-start text-nowrap">Youngstown CC</td>
+                  <td>234</td>
+                  <td>228</td>
+                  <td>237</td>
+                  <td>236</td>
+                  <td>240</td>
+                  <td>1175</td>
+                </tr>
+                <tr>
+                  <td class="text-start text-nowrap">Kirtland CC</td>
+                  <td>210</td>
+                  <td>214</td>
+                  <td>210</td>
+                  <td>214</td>
+                  <td>226</td>
+                  <td>1074</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <img class='mb-3' src="{% static 'img/2023YCC-crop.jpg' %}" width='100%'>
+          </div>
+          <div class="col-md-6">
+            <img class='mb-3' src="{% static 'img/2023YCC-2-crop.jpg' %}" width='100%'>
+          </div>
+          <div class="row">
+          <div class="col-lg-4">
+            <h3>Top Shooters</h3>
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <tr>
+                  <td class="fw-bold" colspan="2">Top Gun</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>B. Benyo</td>
+                  <td class='text-center'>242</td>
+                </tr>
+                <thead>
+                <tr>
+                  <td class="fw-bold" colspan="2">Runner-up</td>
+                </tr>
+              </thead>
+                <tr>
+                  <td>J. Nook</td>
+                  <td class='text-center'>235</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            
+          <div class="col-lg-4">
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <p class='fw-bold'>Winning Team - YCC</p>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>B. Benyo</td>
+                  <td class='text-center'>242</td>
+                </tr>
+                <tr>
+                  <td>S. Anderson</td>
+                  <td class='text-center'>234</td>
+                </tr>
+                <tr>
+                  <td>T. Roberts</td>
+                  <td class='text-center'>225</td>
+                </tr>
+                <tr>
+                  <td>R. Strollo</td>
+                  <td class='text-center'>222</td>
+                </tr>
+                <tr>
+                  <td>S. Bolten</td>
+                  <td class='text-center'>221</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-4">
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <tr>
+                  <p class='fw-bold'>Second Team - CC</p>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>J. Nook</td>
+                  <td class='text-center'>235</td>
+                </tr>
+                <tr>
+                  <td>B. Buescher</td>
+                  <td class='text-center'>232</td>
+                </tr>
+                <tr>
+                  <td>S. Smith</td>
+                  <td class='text-center'>226</td>
+                </tr>
+                <tr>
+                  <td>R. Wesorick</td>
+                  <td class='text-center'>222</td>
+                </tr>
+                <tr>
+                  <td>J. Moroscak</td>
+                  <td class='text-center'>163</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+          <div class="col-lg-4">
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <tr>
+                  <p class='fw-bold'>Third Team - HVGC</p>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>P. Taylor Jr.</td>
+                  <td class='text-center'>233</td>
+                </tr>
+                <tr>
+                  <td>M. Morris</td>
+                  <td class='text-center'>228</td>
+                </tr>
+                <tr>
+                  <td>H. Vavrik</td>
+                  <td class='text-center'>227</td>
+                </tr>
+                <tr>
+                  <td>J. Raythbun</td>
+                  <td class='text-center'>224</td>
+                </tr>
+                <tr>
+                  <td>T. Commes</td>
+                  <td class='text-center'>222</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-4">
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <tr>
+                  <p class='fw-bold'>Fourth Team - MHYC</p>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>T. Skinner</td>
+                  <td class='text-center'>227</td>
+                </tr>
+                <tr>
+                  <td>B. Litra</td>
+                  <td class='text-center'>217</td>
+                </tr>
+                <tr>
+                  <td>K. Horvath</td>
+                  <td class='text-center'>214</td>
+                </tr>
+                <tr>
+                  <td>R. Munz</td>
+                  <td class='text-center'>207</td>
+                </tr>
+                <tr>
+                  <td>T. Sims</td>
+                  <td class='text-center'>203</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-4">
+            <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+              <thead>
+                <tr>
+                  <p class='fw-bold'>Fifth Team - KCC</p>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>B. Doty</td>
+                  <td class='text-center'>223</td>
+                </tr>
+                <tr>
+                  <td>A. Andrews</td>
+                  <td class='text-center'>222</td>
+                </tr>
+                <tr>
+                  <td>D. Homer</td>
+                  <td class='text-center'>200</td>
+                </tr>
+                <tr>
+                  <td>T. Bourne</td>
+                  <td class='text-center'>194</td>
+                </tr>
+                <tr>
+                  <td>B. Gerhart</td>
+                  <td class='text-center'>193</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+    <section id="scores">
+      <table class="table table-striped table-bordered border-primary display product-overview mb-30">
+        <thead>
+          <tr>
+            <th rowspan="3">Team / Shooter</th>
+            {% for host in hosts %}
+              {% if host.host_day == "1" %}
+                <th colspan="4" class='text-center'>{{ host.name}}</th>
+              {% endif %}
+              {% if host.host_day == "2" %}
+                <th colspan="4" class='text-center'>{{ host.name}}</th>
+              {% endif %}
+              {% if host.host_day == "3" %}
+                <th colspan="4" class='text-center'>{{ host.name}}</th>
+              {% endif %}
+              {% if host.host_day == "4" %}
+                <th colspan="4" class='text-center'>{{ host.name}}</th>
+              {% endif %}
+              {% if host.host_day == "5" %}
+                <th colspan="4" class='text-center'>{{ host.name}}</th>
+              {% endif %}
+            {% endfor %}
+          </tr>
+          
+          <tr>
+            <th colspan="2" class='text-center'>Round</th>
+            <th class='text-center'>Day 1</th>
+            <th class='text-center'>Cumm</th>
+            <th colspan="2" class='text-center'>Round</th>
+            <th class='text-center'>Day 2</th>
+            <th class='text-center'>Cumm</th>
+            <th colspan="2" class='text-center'>Round</th>
+            <th class='text-center'>Day 3</th>
+            <th class='text-center'>Cumm</th>
+            <th colspan="2" class='text-center'>Round</th>
+            <th class='text-center'>Day 4</th>
+            <th class='text-center'>Cumm</th>
+            <th colspan="2" class='text-center'>Round</th>
+            <th class='text-center'>Day 5</th>
+            <th class='text-center'>Grand</th>
+          </tr>
+          <tr>
+            <th class='text-center'>1</th>
+            <th class='text-center'>2</th>
+            <th class='text-center'>Total</th>
+            <th class='text-center'>Total</th>
+            <th class='text-center'>3</th>
+            <th class='text-center'>4</th>
+            <th class='text-center'>Total</th>
+            <th class='text-center'>Total</th>
+            <th class='text-center'>5</th>
+            <th class='text-center'>6</th>
+            <th class='text-center'>Total</th>
+            <th class='text-center'>Total</th>
+            <th class='text-center'>7</th>
+            <th class='text-center'>8</th>
+            <th class='text-center'>Total</th>
+            <th class='text-center'>Total</th>
+            <th class='text-center'>9</th>
+            <th class='text-center'>10</th>
+            <th class='text-center'>Total</th>
+            <th class='text-center'>Total</th>
+          </tr>
+          
+        </thead>
+        <tbody class="align-middle text-center">
+          {% for team in teams %}
+            <tr>
+              <td class='fw-bold'>{{ team.name }}</td>
+              {% for shooter in shooters %}
+                {% if shooter.team == team %}
+                <tr>
+                  <td class="text-start text-nowrap">{{ shooter }}</td>
+                  {% for score in scores %}
+                    {% if score.shooter == shooter %}
+                      <td style="background-color: {% if score.RD1_POINTS == 25 %}#ff0000{% endif %}">
+                        {{ score.RD1_POINTS }}
+                      </td>
+                      <td style="background-color: {% if score.RD2_POINTS == 25 %}#ff0000{% endif %}">
+                        {{ score.RD2_POINTS }}
+                      </td>
+                      <td>
+                        {{ score.Day1_total }}
+                      </td>
+                      <td>
+                        {{ score.Day1_total }}
+                      </td>
+                      <td style="background-color: {% if score.RD3_POINTS == 25 %}#ff0000{% endif %}">
+                        {{ score.RD3_POINTS }}
+                      </td>
+                      <td style="background-color: {% if score.RD4_POINTS == 25 %}#ff0000{% endif %}">
+                        {{ score.RD4_POINTS }}
+                      </td>
+                      <td>
+                        {{ score.Day2_total }}
+                      </td>
+                      <td>
+                        {{ score.Day2_cumm }}
+                      </td>
+                      <td style="background-color: {% if score.RD5_POINTS == 25 %}#ff0000{% endif %}">
+                        {{ score.RD5_POINTS }}
+                      </td>
+                      <td style="background-color: {% if score.RD6_POINTS == 25 %}#ff0000{% endif %}">
+                        {{ score.RD6_POINTS }}
+                      </td>
+                      <td>
+                        {{ score.Day3_total }}
+                      </td>
+                      <td>
+                        {{ score.Day3_cumm }}
+                      </td>
+                      <td style="background-color: {% if score.RD7_POINTS == 25 %}#ff0000{% endif %}">
+                        {{ score.RD7_POINTS }}</td>
+                      <td style="background-color: {% if score.RD8_POINTS == 25 %}#ff0000{% endif %}">
+                        {{ score.RD8_POINTS }}</td>
+                      <td>
+                        {{ score.Day4_total }}
+                      </td>
+                      <td>
+                        {{ score.Day4_cumm }}
+                      </td>
+                      <td style="background-color: {% if score.RD9_POINTS == 25 %}#ff0000{% endif %}">
+                        {{ score.RD9_POINTS }}</td>
+                      <td style="background-color: {% if score.RD10_POINTS == 25 %}#ff0000{% endif %}">
+                        {{ score.RD10_POINTS }}
+                      </td>
+                      <td>
+                        {{ score.Day5_total }}
+                      </td>
+                      <td>
+                        {{ score.Day5_cumm }}
+                      </td>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+                </tr>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        <tbody>
+      </table>
+    </section>
+  </div>
+{% endblock %}

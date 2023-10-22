@@ -21,7 +21,7 @@ def scores_report_final(request):
   all_shooters = Shooter.objects.all().order_by('name')
   all_scores = Score.objects.all()
   # top_five = Score.objects.order_by('-score')[:5]
-  return render(request, 'indigoshoot/index.html', {
+  return render(request, 'indigoshoot/scores.html', {
     'teams': all_teams,
     'hosts': host_order,
     'shooters': all_shooters,
