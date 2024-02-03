@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Max
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.template.defaulttags import register
 # Create your models here.
