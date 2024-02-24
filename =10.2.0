@@ -1,0 +1,5 @@
+Collecting Pillow
+  Downloading pillow-10.2.0-cp310-cp310-manylinux_2_28_x86_64.whl (4.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 35.8 MB/s eta 0:00:00
+Installing collected packages: Pillow
+Successfully installed Pillow-10.2.0
