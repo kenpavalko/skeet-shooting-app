@@ -78,15 +78,23 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'skeet_shooting_scoring_app_db',
+#         'USER' : 'indigoadmin',
+#         'PASSWORD' : 'Indi6163',
+#         'HOST' : 'localhost',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'skeet_shooting_scoring_app_db',
-        'USER' : 'indigoadmin',
-        'PASSWORD' : 'Indi6163',
-        'HOST' : 'localhost',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
 }
+
 
 
 # Password validation

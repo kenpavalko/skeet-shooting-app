@@ -4,14 +4,23 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.template.defaulttags import register
 # Create your models here.
 
+class Tournament(models.Model):
+  name = models.CharField(max_length=255, unique=True)
+  date = models.DateField()
+
+  def __str__(self):
+    return self.name
+
 class Team(models.Model):
   name = models.CharField(max_length=20, unique=True)
   host_day = models.CharField(max_length=20)
+  tournament = models.ForeignKey(Tournament, on_delete=models.CASCADE)
 
   def __str__(self):
     return self.name
 
 class Shooter(models.Model):
+  enabled = models.BooleanField(default=True)
   name = models.CharField(max_length=255, unique=True)
   team = models.ForeignKey(Team, on_delete=models.CASCADE)
 
@@ -20,6 +29,7 @@ class Shooter(models.Model):
 
 class Score(models.Model):
   shooter = models.OneToOneField(Shooter, on_delete=models.CASCADE,unique=True)
+  tournament = models.ForeignKey(Tournament, on_delete=models.CASCADE)
   RD1_POINTS = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(25)], default=0)
   RD2_POINTS = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(25)], default=0)
   RD3_POINTS = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(25)], default=0)

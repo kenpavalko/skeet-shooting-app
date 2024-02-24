@@ -1,12 +1,16 @@
 from django.contrib import admin
-from . models import Team, Shooter,  Score
+from . models import Team, Shooter,  Score, Tournament
 # Register your models here.
+
+class TournamentAdmin(admin.ModelAdmin):
+  list_display = ('name', 'date')
+
 
 class TeamAdmin(admin.ModelAdmin):
   list_display = ('name', 'host_day')
 
 class ShooterAdmin(admin.ModelAdmin):
-  list_display = ('name', 'team')
+  list_display = ('name', 'team', 'enabled',)
   list_filter = ('team',)
 
 class ScoreAdmin(admin.ModelAdmin):
@@ -19,3 +23,4 @@ class ScoreAdmin(admin.ModelAdmin):
 admin.site.register(Team,TeamAdmin)
 admin.site.register(Shooter,ShooterAdmin)
 admin.site.register(Score,ScoreAdmin)
+admin.site.register(Tournament,TournamentAdmin)
