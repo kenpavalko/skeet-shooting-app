@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!#&-arh2q48()xa278zs2y!k&h8!n)k6oz%^goc)dx__du^53r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['indigoshootscores.myitdepartment.org', 'localhost']
+ALLOWED_HOSTS = ['indigoshootscores.myitdepartment.org', 'localhost', 'skeet-shooting-app-production.up.railway.app']
 
 
 # Application definition
