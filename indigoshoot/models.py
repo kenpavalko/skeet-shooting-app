@@ -22,6 +22,7 @@ class Team(models.Model):
 class Shooter(models.Model):
   enabled = models.BooleanField(default=True)
   name = models.CharField(max_length=255, unique=True)
+  lname = models.CharField(max_length=255, default="lastname_needed")
   team = models.ForeignKey(Team, on_delete=models.CASCADE)
 
   def __str__(self):

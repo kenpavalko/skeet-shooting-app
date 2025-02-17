@@ -10,7 +10,7 @@ class TeamAdmin(admin.ModelAdmin):
   list_display = ('name', 'host_day')
 
 class ShooterAdmin(admin.ModelAdmin):
-  list_display = ('name', 'team', 'enabled',)
+  list_display = ('name', 'lname', 'team', 'enabled',)
   list_filter = ('team',)
 
 class ScoreAdmin(admin.ModelAdmin):

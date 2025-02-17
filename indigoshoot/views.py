@@ -6,7 +6,7 @@ def scores_report(request):
   all_tournaments = Tournament.objects.all()
   all_teams = Team.objects.all().order_by('name')
   host_order = Team.objects.all().order_by('host_day')
-  all_shooters = Shooter.objects.all().order_by('name')
+  all_shooters = Shooter.objects.all().order_by('lname')
   all_scores = Score.objects.all()
   # top_five = Score.objects.order_by('-score')[:5]
   return render(request, 'indigoshoot/index.html', {
